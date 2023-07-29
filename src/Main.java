@@ -49,7 +49,7 @@ public class Main {
     private static void example5Test() {
         Example5 example5 = new Example5();
 
-        Stream<String> stream1 = Stream.of("Dima","Dasha","Sasha","Denis");
+        Stream<String> stream1 = Stream.of("Dima","Dasha", "Sasha", "Denis");
         Stream<String> stream2 = Stream.of("Max","Peter","Jean","John");
 
         example5.zip(stream1,stream2).forEach(System.out::println);
